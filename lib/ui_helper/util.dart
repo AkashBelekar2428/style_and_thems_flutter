@@ -3,11 +3,14 @@ import 'dart:ui';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-TextStyle mTextStyle11(){
+TextStyle mTextStyle11({
+  Color textColor = Colors.cyanAccent,
+  FontWeight fontweight = FontWeight.w700
+}){
   return TextStyle(
     fontSize: 11,
-      fontWeight: FontWeight.w500,
-    color: Colors.pink
+      fontWeight: fontweight,
+    color: textColor
 
   );
 }

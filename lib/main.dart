@@ -38,7 +38,7 @@ class stylenandThemsScreen extends StatelessWidget {
                 ?.copyWith(color: Colors.orange),),
             Text("text 2", style: mTextstyle21()),
             Text("text 3", style: mTextstyle18()),
-            Text("text 4", style: mTextStyle11()),
+            Text("text 4", style: mTextStyle11(textColor: Colors.purple, fontweight: FontWeight.bold)),
           ],
         )
     );
