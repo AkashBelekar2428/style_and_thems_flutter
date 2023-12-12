@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:style_and_thems/ui_helper/util.dart';
 
 void main(){
   runApp(styleAndThems());
@@ -21,21 +22,26 @@ class styleAndThems extends StatelessWidget{
     );
   }
 }
-class stylenandThemsScreen extends StatelessWidget{
+class stylenandThemsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
- return Scaffold(
-   appBar: AppBar(
-     title: Text("Style and Thems",),
-   ),
-   body: Column(
-    children: [
-    Text("text 1",style:Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.orange),),
-    Text("text 2",style:Theme.of(context).textTheme.titleSmall,),
-      Text("text 3",style:Theme.of(context).textTheme.titleMedium,),
-      Text("text 4",style:Theme.of(context).textTheme.titleSmall,),
-    ],
-   )
- );
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("Style and Thems",),
+        ),
+        body: Column(
+          children: [
+            Text("text 1", style: Theme
+                .of(context)
+                .textTheme
+                .titleMedium
+                ?.copyWith(color: Colors.orange),),
+            Text("text 2", style: mTextstyle21()),
+            Text("text 3", style: mTextstyle18()),
+            Text("text 4", style: mTextStyle11()),
+          ],
+        )
+    );
   }
 }
+
